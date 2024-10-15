@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.home-header {
+    background-image: url("/assets/frontend_assets/header_img.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.home-header h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px tomato;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.home-header p {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+.home-header .button {
+    background-color: rgb(156, 196, 77);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+.home-header .button:hover {
+    background-color: rgb(156, 196, 77);
+    color: tomato;
+    text-shadow: 0 0 2px rgb(156, 196, 77);
+    box-shadow: 0 0 10px rgb(156, 196, 77);
+    transition: background-color 0.3s ease;
+}
+
+.explore-menu {
+    max-width: 100%;
+    columns: #808080;
+    margin-top: 40px;
+}
+
+.explore-menu-list {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.explore-menu-item {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;  
+}
+
+.food-item {
+    width: 300px;
+    height: auto;
+    display: flex;
+    border-radius: 8px;
+}
+
+/* .food-item :hover {
+    background-color: rgb(156, 196, 77);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(156, 196, 77);
+    box-shadow: 0 0 10px rgb(156, 196, 77);
+    transition: background-color, color 0.5s ease, box-shadow 0.5s ease;
+} */
+
+.food-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: auto;
+}
+
+.food-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-item-info h3 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.food-item-info p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    text-align: start;
+    width: 100%;
+    padding: 0px 10px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
+
+.food-item-info button {
+    background-color: rgb(156, 196, 77);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    align-self: flex-end;
+    transition: background-color, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.food-item-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-item-info button:hover {
+    background-color: tomato;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(236, 116, 60);
+    box-shadow: 0 0 10px tomato;
+    transition: background-color, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.food-item-info h4 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.rating {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    align-self: flex-center;
+    display: flex;
+    gap: 5px;
+}
+
+.rating span {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rating .checked {
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+

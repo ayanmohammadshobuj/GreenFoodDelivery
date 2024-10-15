@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Header Section -->
+<div class="container">
+    <div class="card home-header">
+        <div class="card-body">
+            <h3 class="card-title">Order Now Your Favorite Food</h3>
+            <p class="card-text">Get diverse and delicious food at your door step with GreenFood.<br>Order from your
+                favorite
+                restaurant and enjoy your meal.</p>
+            <a href="#" class="button">View Menu</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Product Categories -->
+<div class="container">
+    <div class="explore-menu" id="explore-menu">
+        <h2>Explore Menu</h2>
+        <p class="explore-menu-text">Explore our menu and enjoy your meal.</p>
+        <div class="explore-menu-list">
+            @for (item of categories; track $index) {
+            <div class="menu-item">
+                <div class="explore-menu-item">
+                    <img src={{item.categoryThumbnail}} alt="Food Image">
+                </div>
+                <!-- TODO: Add Food Name and Description here -->
+                <h3>{{item.categoryName}}</h3>
+            </div>
+            }
+        </div>
+    </div>
+    <hr class="food-item-hr d-none d-md-block">
+</div>
+
+
+
+<!-- Food Items Cards-->
+<div class="container" id="food-item1">
+    <h2>Food Items</h2>
+    <p class="food-item-text">Explore our menu and enjoy your food.</p>
+    <div class="food-item-list row m-0 p-0">
+        @for (item of products; track $index){
+        <div class="card food-item col-md-3 m-0 p-0">
+            <div class="food-item-img">
+                <img src={{item.thumbnail}} alt="Food Image">
+            </div>
+            <div class="food-item-info">
+                <h3>{{item.title}}</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p class="food-item-description">{{item.description}}</p>
+                <div class="row col-md-12">
+                    <h4 class="food-item-price col-md-6">${{item.price}}</h4>
+
+                    <button class="btn btn-primary d-flex col-md-6 d-md-flex justify-content-center">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>

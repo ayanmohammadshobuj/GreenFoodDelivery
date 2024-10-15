@@ -1,0 +1,276 @@
+{
+    "products": [
+        {
+            "productId": 1,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_1.png"
+        },
+        {
+            "productId": 2,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_2.png"
+        },
+        {
+            "productId": 3,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_3.png"
+        },
+        {
+            "productId": 4,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_4.png"
+        },
+        {
+            "productId": 5,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_5.png"
+        },
+        {
+            "productId": 6,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_6.png"
+        },
+        {
+            "productId": 7,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_7.png"
+        },
+        {
+            "productId": 8,
+            "title": "Green Salad",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultrices massa.",
+            "categoryId": 102,
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "availabilityStatus": "Low Stock",
+            "thumbnail": "assets/frontend_assets/food_8.png"
+        }
+    ],
+    "categories": [
+        {
+            "categoryId": 101,
+            "categoryName": "Ice-Cream",
+            "categoryThumbnail": "assets/frontend_assets/food_1.png"
+        },
+        {
+            "categoryId": 102,
+            "categoryName": "Salad",
+            "categoryThumbnail": "assets/frontend_assets/food_2.png"
+        },
+        {
+            "categoryId": 103,
+            "categoryName": "Rolls",
+            "categoryThumbnail": "assets/frontend_assets/food_3.png"
+        },
+        {
+            "id": 104,
+            "categoryName": "Desert",
+            "categoryThumbnail": "assets/frontend_assets/food_4.png"
+        },
+        {
+            "categoryId": 105,
+            "categoryName": "Sandwich",
+            "categoryThumbnail": "assets/frontend_assets/food_5.png"
+        },
+        {
+            "categoryId": 106,
+            "categoryName": "Cake",
+            "categoryThumbnail": "assets/frontend_assets/food_6.png"
+        },
+        {
+            "categoryId": 107,
+            "categoryName": "Pasta",
+            "categoryThumbnail": "assets/frontend_assets/food_7.png"
+        },
+        {
+            "categoryId": 108,
+            "categoryName": "Vegitable",
+            "categoryThumbnail": "assets/frontend_assets/food_8.png"
+        },
+        {
+            "categoryId": 109,
+            "categoryName": "Chinese",
+            "categoryThumbnail": "assets/frontend_assets/food_9.png"
+        },
+        {
+            "categoryId": 110,
+            "categoryName": "Fast-Food",
+            "categoryThumbnail": "assets/frontend_assets/food_10.png"
+        },
+        {
+            "categoryId": 111,
+            "categoryName": "Deshi",
+            "categoryThumbnail": "assets/frontend_assets/food_11.png"
+        }
+    ],
+    "users": [
+        {
+            "userId": 1001,
+            "firstName": "Shobuj",
+            "lastName": "Shekh",
+            "age": 28,
+            "gender": "male",
+            "address": [
+                {
+                    "street": "west nakhalpara",
+                    "thana": "tejgaon",
+                    "city": "dhaka",
+                    "district": "dhaka"
+                }
+            ],
+            "email": "mdshobuj968@gmail.com",
+            "password": "12345",
+            "image": "assets/frontend_assets/profile.png"
+        },
+        {
+            "userId": 1002,
+            "firstName": "Sharmin",
+            "lastName": "Shanu",
+            "age": 28,
+            "address": [
+                {
+                    "street": "kalabagan",
+                    "thana": "kalabagan",
+                    "city": "dhaka",
+                    "district": "dhaka"
+                }
+            ],
+            "gender": "female",
+            "email": "sharminshanu@gmail.com",
+            "password": "12345",
+            "image": "assets/frontend_assets/profile.png"
+        }
+    ],
+    "orders": [
+        {
+            "orderId": 2001,
+            "userId": 1001,
+            "products": [
+                {
+                    "productId": 1,
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "orderId": 2002,
+            "userId": 1002,
+            "products": [
+                {
+                    "productId": 1,
+                    "quantity": 1
+                },
+                {
+                    "productId": 2,
+                    "quantity": 1
+                }
+            ],
+            "status": "pending",
+            "total": 9.99,
+            "paymentType": "cod",
+            "paymentStatus": "pending"
+        }
+    ],
+    "carts": [
+        {
+            "cartId": 3001,
+            "userId": 1001,
+            "products": [
+                {
+                    "productId": 1,
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "cartId": 3002,
+            "userId": 1002,
+            "products": [
+                {
+                    "productId": 1,
+                    "quantity": 1
+                },
+                {
+                    "productId": 2,
+                    "quantity": 1
+                }
+            ],
+            "total": 9.99
+        }
+    ]
+}
