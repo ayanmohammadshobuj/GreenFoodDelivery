@@ -19,6 +19,16 @@ import { Categories } from '../../../models/categories';
 })
 export class HomeComponent implements OnInit {
 
+  itemsPerPage = 8;
+  currentPage = 1;
+  totalItems = 0;
+
+  get paginationData() {
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    return this.products.slice(startIndex, endIndex);
+  }
+
   categories: Categories[] = [];
   categoryList: Categories = {
     categoryId: 0,
