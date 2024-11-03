@@ -1,0 +1,122 @@
+<nav class="container navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid row mx-5">
+        <!-- Logo Section -->
+        <div class="col-6 col-md-4">
+            <a class="navbar-brand" href="#">GreenFood</a>
+            <!-- Toggler for mobile -->
+            <div class="m-auto justify-content-end d-flex align-items-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse col-6 col-md-8" id="navbarContent">
+            <!-- Left-aligned Home, Menu, Contact -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="openHome()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="openMenu()">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right-aligned Search, Cart, Login -->
+            <ul class="navbar-nav d-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="assets/frontend_assets/search_icon.png" alt="Search"
+                            width="20" height="20"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" (click)="goToCart()"><img src="assets/frontend_assets/basket_icon.png" alt="Cart" width="20"
+                            height="20"></a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success" type="button" (click)="login()">Login</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with
+                            anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    </div>
+                    <div>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+            
+                <p class="container">Don't have an account?&nbsp;<a href="" toggle-bs-target="#signUpModal">Sign Up</a></p> -->
+                <!-- Sign Up Modal -->
+                <!-- <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="signUpModalLabel">Sign Up</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>  
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with
+                                            anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                    </div>
+                                    <div>
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Loign</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+

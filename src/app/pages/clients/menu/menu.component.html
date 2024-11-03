@@ -1,0 +1,147 @@
+<app-navbar></app-navbar>
+
+<!-- <div class="container" id="food-item1">
+    <h2>Food Items</h2>
+    <p class="food-item-text">Explore our menu and enjoy your food.</p>
+    <div class="food-item-list row m-0 p-0">
+        @for (item of products; track $index){
+        <div class="card food-item col-md-3 m-0 p-0 main-card">
+            <div class="food-item-img">
+                <img src={{item.thumbnail}} style="width: 100%; height: 200px;" alt="Food Image">
+            </div>
+            <div class="food-item-info">
+                <h3>{{item.title}}</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p class="food-item-description">{{item.description}}</p>
+                <div class="row col-md-12">
+                    <h4 class="food-item-price col-md-6">${{item.price}}</h4>
+
+                    <button class="btn btn-primary d-flex col-md-6 d-md-flex justify-content-center"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart</button>
+                </div>
+            </div>
+        </div> -->
+        <!-- Add to Cart Modal -->
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">{{item.title}}</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src={{item.thumbnail}} style="width: 100%; height: 200px;" alt="Food Image">
+                        <p class="food-item-description">{{item.description}}</p>
+                        <h4 class="food-item-price">${{item.price}}</h4>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Order Now</button>
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+
+    </div> -->
+
+    <div class="container" id="food-item1">
+      <h2>Food Items</h2>
+      <p class="food-item-text">Explore our menu and enjoy your food.</p>
+      <!-- <div class="food-item-list row m-0 p-0">
+            @for (item of products.data; track $index){
+            <div class="card food-item col-md-3 m-0 p-0">
+                <div class="food-item-img">
+                    <img src={{item.thumbnail}} style="width: 100%; height: 200px;" alt="Food Image">
+                </div>
+                <div class="food-item-info">
+                    <h3>{{item.title}}</h3>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="food-item-description">{{item.description}}</p>
+                    <div class="row col-md-12">
+                        <h4 class="food-item-price col-md-6">${{item.price}}</h4>
+    
+                        <button class="btn btn-primary d-flex col-md-6 d-md-flex justify-content-center">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            }
+        </div> -->
+    
+      <div class="food-item-list row m-0 p-0">
+        @for (item of productsList; track $index){
+        <div class="card food-item col-md-3 m-0 p-0 main-card">
+          <div class="food-item-img">
+            <img src="{{item.thumbnail}}" style="width: 100%; height: 200px;" alt="Food Image">
+          </div>
+          <div class="food-item-info">
+            <h3>{{item.title}}</h3>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p class="food-item-description">{{item.description}}</p>
+            <div class="row col-md-12">
+              <h4 class="food-item-price col-md-6">${{item.price}}</h4>
+    
+              <!-- Updated button to pass the clicked item's data -->
+              <button class="btn btn-primary d-flex col-md-6 d-md-flex justify-content-center" (click)="selectItem(item)"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">{{selectedItem?.title}}</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img [src]="selectedItem?.thumbnail" style="width: 100%; height: 200px;" alt="Food Image">
+            <p class="food-item-description">{{selectedItem?.description}}</p>
+            <h4 class="food-item-price">${{selectedItem?.price}}</h4>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="quantity">
+    
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success">Order Now</button>
+            <button type="button" class="btn btn-primary" (click)="addToCart(selectedItem!.productId, quantity, selectedItem!.thumbnail)">Add to Cart</button>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+      

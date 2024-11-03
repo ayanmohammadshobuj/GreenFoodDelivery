@@ -1,0 +1,27 @@
+.footer-about-h2,
+.footer-about-p {
+    color: ghostwhite;
+}
+
+.footer-about-p {
+    color: rgb(185, 185, 185);
+}
+
+.footer-col2 {
+    color: ghostwhite;
+    text-decoration: none;
+
+}
+
+.footer-list-col2 {
+    list-style: none;
+}
+
+.footer-catagories-list {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+.footer-catagories-list:hover {
+    color: ghostwhite;
+}
